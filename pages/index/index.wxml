@@ -3,43 +3,29 @@
   <view class="weather-card">
     <view class="today">
       <view class="top">
-        <view class="range">16°-25°</view>
+        <view class="range">{{weather.today.low}} ~ {{weather.today.high}}</view>
         <view class="refresh">
           <image src="../../image/white/refesh.png"></image>
         </view>
       </view>
       <view class="middle">
-        <image src="../../image/white/qing.png"></image>
+        <image src="../../image/white/{{weather.today.typeIcon}}"></image>
+        <view class="type-text">{{weather.today.typeText}}</view>
       </view>
       <view class="bottom">
-        <view class="temp">18°C</view>
+        <view class="temp">{{weather.today.wendu}}°C</view>
         <view class="city-day">
-          <view class="day">星期天</view>
-          <view class="city">上海，中国</view>
+          <view class="day">{{weather.today.week}}</view>
+          <view class="city">{{weather.city}}，中国</view>
         </view>
       </view>
     </view>
     <view class="other">
       <scroll-view scroll-x="true">
-        <view class="scroll-view-item">
-          <view class="top aligncenter">星期一</view>
-          <view class="middle aligncenter"><image src="../../image/black/qing.png"></image></view>
-          <view class="bottom aligncenter">16°-25°</view>
-        </view>
-        <view class="scroll-view-item">
-          <view class="top aligncenter">星期一</view>
-            <view class="middle aligncenter"><image src="../../image/black/qing.png"></image></view>
-          <view class="bottom aligncenter">16°-25°</view>
-        </view>
-        <view class="scroll-view-item">
-          <view class="top aligncenter">星期一</view>
-            <view class="middle aligncenter"><image src="../../image/black/qing.png"></image></view>
-          <view class="bottom aligncenter">16°-25°</view>
-        </view>
-        <view class="scroll-view-item">
-          <view class="top aligncenter">星期一</view>
-            <view class="middle aligncenter"><image src="../../image/black/qing.png"></image></view>
-          <view class="bottom aligncenter">16°-25°</view>
+        <view wx:for="{{weather.futureList}}" class="scroll-view-item">
+          <view class="top aligncenter">{{item.week}}</view>
+          <view class="middle aligncenter"><image src="../../image/black/{{item.type}}"></image></view>
+          <view class="bottom aligncenter">{{item.wendu}}</view>
         </view>
       </scroll-view>
     </view>
