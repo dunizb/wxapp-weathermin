@@ -22,18 +22,32 @@ view{box-sizing: border-box;font-family: "Microsoft YaHei"}
   border-radius: 5px;
   overflow: hidden;
 }
-.today{width: 100%;height: 60%;background: linear-gradient(0deg, rgba(255,59,57,1) 0%, rgba(255,139,45,1) 100%);}
+.today{
+  width: 100%;height: 60%;
+  background: linear-gradient(0deg, rgba(255,59,57,1) 0%, rgba(255,139,45,1) 100%);
+  position: relative;
+}
 .other{width: 100%;height: 40%;background: #fff;}
 
-.today .top{}
-.today .top .range{}
-.today .top .refresh{}
+.today .top{position: absolute;top: 0;left: 0;width: 100%;height: 30rpx;}
+.today .top .range{font-size: 36rpx;color:#fff;float: left;}
+.today .top .refresh{float: right;}
+.today .top .refresh image{width: 36rpx;height: 36rpx;}
 
-.today .middle{}
-.today .middle image{}
+.today .middle{
+  position: absolute; 
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+.today .middle image{width:250rpx;height: 250rpx;}
 
-.today .bottom{}
-.today .bottom .temp{}
-.today .bottom .city-day{}
-.today .bottom .city-day .day{}
-.today .bottom .city-day .city{}
+.today .bottom{
+  width: 100%;
+  position: absolute; 
+  color: #fff;
+  bottom: 0;left: 0;
+}
+.today .bottom .temp{font-size: 125rpx; float: left;}
+.today .bottom .city-day{float: right;}
+.today .bottom .city-day .day{font-size: 80rpx;}
+.today .bottom .city-day .city{font-size: 40rpx;}

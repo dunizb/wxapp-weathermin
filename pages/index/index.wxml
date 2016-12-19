@@ -12,7 +12,7 @@
         <image src="../../image/white/qing.png"></image>
       </view>
       <view class="bottom">
-        <view class="temp">18°</view>
+        <view class="temp">18°C</view>
         <view class="city-day">
           <view class="day">星期天</view>
           <view class="city">上海，中国</view>
