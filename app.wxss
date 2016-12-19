@@ -29,10 +29,10 @@ view{box-sizing: border-box;font-family: "Microsoft YaHei"}
 }
 .other{width: 100%;height: 40%;background: #fff;}
 
-.today .top{position: absolute;top: 0;left: 0;width: 100%;height: 30rpx;}
-.today .top .range{font-size: 36rpx;color:#fff;float: left;}
-.today .top .refresh{float: right;}
-.today .top .refresh image{width: 36rpx;height: 36rpx;}
+.today .top{position: absolute;top: 0;left: 0;width: 100%;padding: 0 5px;}
+.today .top .range{font-size: 50rpx;color:#fff;float: left;}
+.today .top .refresh{float: right;line-height: 27px;}
+.today .top .refresh image{width: 50rpx;height: 50rpx;vertical-align: middle;}
 
 .today .middle{
   position: absolute; 
@@ -46,6 +46,7 @@ view{box-sizing: border-box;font-family: "Microsoft YaHei"}
   position: absolute; 
   color: #fff;
   bottom: 0;left: 0;
+  padding: 0 5px;
 }
 .today .bottom .temp{font-size: 125rpx; float: left;}
 .today .bottom .city-day{float: right;}
