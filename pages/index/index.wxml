@@ -19,6 +19,29 @@
         </view>
       </view>
     </view>
-    <view class="other"></view>
+    <view class="other">
+      <scroll-view scroll-x="true">
+        <view class="scroll-view-item">
+          <view class="top aligncenter">星期一</view>
+          <view class="middle aligncenter"><image src="../../image/black/qing.png"></image></view>
+          <view class="bottom aligncenter">16°-25°</view>
+        </view>
+        <view class="scroll-view-item">
+          <view class="top aligncenter">星期一</view>
+            <view class="middle aligncenter"><image src="../../image/black/qing.png"></image></view>
+          <view class="bottom aligncenter">16°-25°</view>
+        </view>
+        <view class="scroll-view-item">
+          <view class="top aligncenter">星期一</view>
+            <view class="middle aligncenter"><image src="../../image/black/qing.png"></image></view>
+          <view class="bottom aligncenter">16°-25°</view>
+        </view>
+        <view class="scroll-view-item">
+          <view class="top aligncenter">星期一</view>
+            <view class="middle aligncenter"><image src="../../image/black/qing.png"></image></view>
+          <view class="bottom aligncenter">16°-25°</view>
+        </view>
+      </scroll-view>
+    </view>
   </view>
 </view>

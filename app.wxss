@@ -1,4 +1,5 @@
 /**app.wxss**/
+.aligncenter{display: flex;justify-content: center;align-items: center;}
 .container {
   height: 100%;
   display: flex;
@@ -8,10 +9,8 @@
   padding: 0 40rpx 40rpx 40rpx;
   box-sizing: border-box;
 } 
-page{
-  background: #2d2f3b;
-  height: 100%;
-}
+page{background: #2d2f3b;height: 100%;}
+
 view{box-sizing: border-box;font-family: "Microsoft YaHei"}
 
 .weather-card{
@@ -48,7 +47,36 @@ view{box-sizing: border-box;font-family: "Microsoft YaHei"}
   bottom: 0;left: 0;
   padding: 0 5px;
 }
-.today .bottom .temp{font-size: 125rpx; float: left;}
-.today .bottom .city-day{float: right;}
+.today .bottom .temp{font-size: 125rpx; float: left;text-align: left;}
+.today .bottom .city-day{float: right;text-align: right;}
 .today .bottom .city-day .day{font-size: 80rpx;}
 .today .bottom .city-day .city{font-size: 40rpx;}
+
+.other scroll-view{ height: 100%;width: 100%;white-space: nowrap;}
+.other scroll-view .scroll-view-item{
+  width: 33.33%;
+  height: 100%;
+  display: inline-block;
+  border-right: 2rpx solid #edebe9;
+  color: #bbb;
+}
+
+.other scroll-view .scroll-view-item .top{
+  width: 100%;
+  height: 25%;
+  font-size: 48rpx;
+}
+.other scroll-view .scroll-view-item .middle{
+  width: 100%;
+  height: 50%;
+}
+.other scroll-view .scroll-view-item .middle image{
+  width: 120rpx;
+  height: 120rpx; 
+  opacity: 0.5;
+}
+.other scroll-view .scroll-view-item .bottom{
+  width: 100%;
+  height: 25%;
+  font-size: 48rpx;
+}
