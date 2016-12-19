@@ -5,6 +5,35 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
+  padding: 0 40rpx 40rpx 40rpx;
   box-sizing: border-box;
 } 
+page{
+  background: #2d2f3b;
+  height: 100%;
+}
+view{box-sizing: border-box;font-family: "Microsoft YaHei"}
+
+.weather-card{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 0 15rpx rgba(0,0,0,0.3);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.today{width: 100%;height: 60%;background: linear-gradient(0deg, rgba(255,59,57,1) 0%, rgba(255,139,45,1) 100%);}
+.other{width: 100%;height: 40%;background: #fff;}
+
+.today .top{}
+.today .top .range{}
+.today .top .refresh{}
+
+.today .middle{}
+.today .middle image{}
+
+.today .bottom{}
+.today .bottom .temp{}
+.today .bottom .city-day{}
+.today .bottom .city-day .day{}
+.today .bottom .city-day .city{}

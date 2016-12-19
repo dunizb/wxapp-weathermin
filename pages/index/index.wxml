@@ -1,10 +1,24 @@
 <!--index.wxml-->
 <view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="weather-card">
+    <view class="today">
+      <view class="top">
+        <view class="range">16°-25°</view>
+        <view class="refresh">
+          <image src="src"></image>
+        </view>
+      </view>
+      <view class="middle">
+        <image src="src"></image>
+      </view>
+      <view class="bottom">
+        <view class="temp"></view>
+        <view class="city-day">
+          <view class="day"></view>
+          <view class="city"></view>
+        </view>
+      </view>
+    </view>
+    <view class="other"></view>
   </view>
 </view>
