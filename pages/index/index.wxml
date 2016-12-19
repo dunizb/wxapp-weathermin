@@ -5,17 +5,17 @@
       <view class="top">
         <view class="range">16°-25°</view>
         <view class="refresh">
-          <image src="src"></image>
+          <image src="../../image/white/refesh.png"></image>
         </view>
       </view>
       <view class="middle">
-        <image src="src"></image>
+        <image src="../../image/white/qing.png"></image>
       </view>
       <view class="bottom">
-        <view class="temp"></view>
+        <view class="temp">18°</view>
         <view class="city-day">
-          <view class="day"></view>
-          <view class="city"></view>
+          <view class="day">星期天</view>
+          <view class="city">上海，中国</view>
         </view>
       </view>
     </view>
