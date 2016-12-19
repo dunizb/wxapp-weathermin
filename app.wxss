@@ -6,7 +6,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 0 40rpx 40rpx 40rpx;
   box-sizing: border-box;
 } 
 page{background: #2d2f3b;height: 100%;}
@@ -18,7 +17,6 @@ view{box-sizing: border-box;font-family: "Microsoft YaHei"}
   height: 100%;
   background: #fff;
   box-shadow: 0 0 15rpx rgba(0,0,0,0.3);
-  border-radius: 5px;
   overflow: hidden;
 }
 .today{
