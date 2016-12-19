@@ -23,10 +23,33 @@ view{box-sizing: border-box;font-family: "Microsoft YaHei"}
 }
 .today{
   width: 100%;height: 60%;
-  background: linear-gradient(0deg, rgba(255,59,57,1) 0%, rgba(255,139,45,1) 100%);
   position: relative;
   text-align: center;
 }
+.background-default{
+  background: linear-gradient(0deg, rgba(255,59,57,1) 0%, rgba(255,139,45,1) 100%);
+}
+.background-dayu{
+  background-image: url('../../image/background/dayu.gif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.background-xiaoyu{
+  background-image: url('../../image/background/xiaoyu.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.background-leizhenyu{
+  background-image: url('../../image/background/leizhenyu.gif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.background-qing{
+  background-image: url('../../image/background/qing.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
 .other{width: 100%;height: 40%;background: #fff;}
 
 .today .top{position: absolute;top: 0;left: 0;width: 100%;padding: 0 5px;}
@@ -51,8 +74,8 @@ view{box-sizing: border-box;font-family: "Microsoft YaHei"}
 }
 .today .bottom .temp{font-size: 125rpx; float: left;text-align: left;}
 .today .bottom .city-day{float: right;text-align: right;}
-.today .bottom .city-day .day{font-size: 80rpx;}
-.today .bottom .city-day .city{font-size: 40rpx;}
+.today .bottom .city-day .day{font-size: 70rpx;}
+.today .bottom .city-day .city{font-size: 35rpx;}
 
 .other scroll-view{ height: 100%;width: 100%;white-space: nowrap;}
 .other scroll-view .scroll-view-item{
@@ -70,13 +93,14 @@ view{box-sizing: border-box;font-family: "Microsoft YaHei"}
 }
 .other scroll-view .scroll-view-item .middle{
   width: 100%;
-  height: 50%;
+  height: 40%;
 }
 .other scroll-view .scroll-view-item .middle image{
   width: 120rpx;
   height: 120rpx; 
   opacity: 0.5;
 }
+.other scroll-view .scroll-view-item .futuretype-text{text-align: center;height: 10%;}
 .other scroll-view .scroll-view-item .bottom{
   width: 100%;
   height: 25%;

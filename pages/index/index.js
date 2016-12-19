@@ -9,6 +9,9 @@ Page({
     var that = this;
     that.loadWeather();
   },
+  refresh: function() {
+    this.loadWeather();
+  },
   loadWeather: function() {
     var that = this;
     that.setData({
@@ -32,6 +35,14 @@ Page({
       "雨夹雪": "yujiaxue.png",
       "阵雨": "zhenyu.png",
       "中雨": "zhongyu.png"
+    };
+    var background = {
+      "大雨": "background-dayu",
+      "中雨": "background-dayu",
+      "小雨": "background-xiaoyu",
+      "暴雨": "background-dayu",
+      "雷阵雨": "background-leizhenyu",
+      "晴": "background-qing"
     };
     wx.request({
       url: 'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=json', 
@@ -59,6 +70,11 @@ Page({
               today.typeText = typeText;                     //天气类型说明
               today.week = todayWeather.date.slice(3);       //星期几
               today.typeIcon = typeIcon[typeText];           //天气类型图片
+              if(background[typeText]){
+                today.typeBackgorund = background[typeText];
+              }else{
+                today.typeBackgorund = "background-default";
+              }
               weather.today = today;
               
               //下周天气、未来天气
@@ -70,6 +86,7 @@ Page({
                 future.type = typeIcon[temp.type];
                 var wendurange = temp.low.split(' ')[1] + "-" + temp.high.split(' ')[1];
                 future.wendu = wendurange;
+                future.typeTetx = temp.type;
                 futureList.push(future);
               }
 

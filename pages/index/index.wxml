@@ -1,10 +1,10 @@
 <!--index.wxml-->
 <view class="container">
   <view class="weather-card">
-    <view class="today">
+    <view class="today {{weather.today.typeBackgorund}}">
       <view class="top">
         <view class="range">{{weather.today.low}} ~ {{weather.today.high}}</view>
-        <view class="refresh">
+        <view class="refresh" bindtap="refresh">
           <image src="../../image/white/refesh.png"></image>
         </view>
       </view>
@@ -24,10 +24,19 @@
       <scroll-view scroll-x="true">
         <view wx:for="{{weather.futureList}}" class="scroll-view-item">
           <view class="top aligncenter">{{item.week}}</view>
-          <view class="middle aligncenter"><image src="../../image/black/{{item.type}}"></image></view>
+          <view class="middle aligncenter">
+            <image src="../../image/black/{{item.type}}"></image>
+          </view>
+          <view class="futuretype-text">{{item.typeTetx}}</view>  
           <view class="bottom aligncenter">{{item.wendu}}</view>
         </view>
       </scroll-view>
     </view>
   </view>
+</view>
+
+<view class="body-view">
+  <loading hidden="{{Loadinghidden}}">
+    加载中...
+  </loading>
 </view>
